@@ -364,7 +364,8 @@ nav.post-controls {
 }
 
 .category-list .category,
-.category-list.with-topics .category {
+.category-list.with-topics .category::after {
+  width: 25rem;
 	// border-radius: 2px;
 	// box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	// margin-top: 0rem;
