@@ -24,3 +24,8 @@ highlight_duration:
   max: 5
   description:
     en: How long - in seconds - should the highlight last?
+
+theme_font_size:
+  default: 1.5
+  description:
+    en: "Size of font"
