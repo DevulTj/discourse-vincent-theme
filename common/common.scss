@@ -232,7 +232,7 @@ div.menu-panel.drop-down {
 }
 
 #main-outlet>.list-controls {
-	background-color: var(--secondary);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.7) 100%);
 	margin-bottom: 1rem;
 	border-radius: 8px
 }
@@ -273,7 +273,7 @@ div.menu-panel.drop-down {
 #main-outlet>.list-controls button {
 	background-color: rgba(191, 193, 218, 0);
 	padding: 1.2rem;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	color: #888cb1;
 	font-family: var(--heading-font-family);
 	margin: 0
@@ -312,7 +312,6 @@ div.menu-panel.drop-down {
 #main-outlet>.list-controls ul.nav li a {
 	background-color: rgba(136, 140, 177, 0);
 	padding: 1.2rem;
-	font-size: 0.9rem;
 	color: #888cb1;
 	font-family: var(--heading-font-family)
 }
@@ -322,9 +321,10 @@ div.menu-panel.drop-down {
 }
 
 #main-outlet>.list-controls ul.nav li a.active {
-	background-color: var(--secondary);
-	color: #171928;
+	background-color: transparent;
+	color: var(--primary) !important;
 	font-weight: bold
+  
 }
 
 #main-outlet>.list-controls ul.nav li li:first-of-type a {
@@ -926,7 +926,7 @@ div.edit-category {
 
 .topic-list-bottom {
 	align-items: center;
-	background-color: rgba(var(--secondary-rgb), 0.7);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.7) 100%);
 	border-radius: 8px;
 	display: flex;
 	flex-direction: row-reverse;
@@ -934,9 +934,9 @@ div.edit-category {
 }
 
 .topic-list-bottom div.education {
-	color: var(--secondary);
+	color: var(--primary);
 	border-top: none;
-	border-bottom: 1px solid rgba(var(--secondary-rgb), 0.2);
+	border-bottom: 1px solid rgba(var(--primary-rgb), 0.2);
 	margin-bottom: 1rem;
 	padding: 1rem
 }
