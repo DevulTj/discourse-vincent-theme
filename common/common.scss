@@ -399,7 +399,7 @@ nav.post-controls {
 
 .category-list .category .category-head,
 .category-list.with-topics .category .category-head {
-	background-color: transparent;
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0) 100%) !important;
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
@@ -1223,7 +1223,7 @@ table.topic-list>tbody tr td.posters img:hover {
 	width: auto;
 	width: -webkit-fill-available;
 	padding: 0;
-	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 30%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.3) 100%);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 30%, rgba(29, 29, 29, 0.8) 50%, rgba(36, 36, 36, 0.9) 100%);
 	border-radius: 8px
 }
 
@@ -1553,13 +1553,13 @@ body.archetype-private_message .post-stream .topic-list {
 }
 
 section.post-menu-area{
-  background: linear-gradient(-90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0) 100%);
+  background: linear-gradient(-90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0) 40%, rgba(23, 25, 25, 0) 100%);
   transition: all 0.2s ease;
   border-radius: 10px
 }
 
 section.post-menu-area:hover{
-	background: linear-gradient(-90deg, rgba(33, 35, 35, 1) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0) 100%);
+	background: linear-gradient(-90deg, rgba(33, 35, 35, 1) 20%, rgba(23, 25, 25, 0) 40%, rgba(23, 25, 25, 0) 100%);
 }
 
 .categories-and-latest .category-heading {
