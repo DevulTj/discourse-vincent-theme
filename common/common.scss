@@ -364,7 +364,7 @@ nav.post-controls {
 }
 
 .category-list .category,
-.category-list.with-topics .category::after {
+.category-list.with-topics .category {
   width: 25rem;
 	// border-radius: 2px;
 	// box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -963,16 +963,17 @@ div.edit-category {
 }
 
 table.topic-list {
-	background-color: var(--primary-very-low);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 30%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.3) 100%); 
 	border-radius: 8px
 }
 
 table.topic-list>thead tr {
-	border-bottom: 0
+	border-bottom: 0;
 }
 
 table.topic-list>thead tr th {
-	background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(0deg, rgba(23, 25, 25, 0.9) 30%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.3) 100%);
+
 	border-bottom: 0;
 	font-weight: bold
 }
@@ -992,11 +993,11 @@ table.topic-list>tbody {
 }
 
 table.topic-list>tbody tr {
-	border-bottom: 1px solid var(--primary-low)
+	border-bottom: 1px solid var(--primary-low);
 }
 
 table.topic-list>tbody tr:last-of-type {
-	border-bottom: 0
+	border-bottom: 0;
 }
 
 table.topic-list>tbody tr.topic-list-item-separator {
@@ -1201,13 +1202,13 @@ table.topic-list>tbody tr td.posters img:hover {
 	width: auto;
 	width: -webkit-fill-available;
 	padding: 0;
-  background-color: var(--secondary);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 30%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.3) 100%);
 	border-radius: 8px
 }
 
 .container.posts article.onscreen-post div.row .topic-body .cooked {
 	margin: 1.5rem 0;
-  background-color: var(--secondary);
+  background-color: none;
 }
 
 .container.posts article.onscreen-post div.row .topic-body .topic-meta-data {
