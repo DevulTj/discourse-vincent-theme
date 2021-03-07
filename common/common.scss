@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 .hljs {
 	padding: 16px;
 	border-radius: 2px;
@@ -44,6 +45,7 @@
 :root {
 	--font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	--heading-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	--alt-font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 	--success: #03a9f4;
 	--highlight-medium: #1194f033
 }
@@ -81,7 +83,7 @@ body #main-outlet {
 @media screen and (min-width: 925px) {
 	.wrap,
 	body #main-outlet {
-		max-width: 900px
+		max-width: 1200px
 	}
 }
 
@@ -360,29 +362,31 @@ nav.post-controls {
 
 .category-list,
 .category-list.with-topics {
-	margin-left: 0
+	margin-left: 0;
+	border-radius: 10px !important;
 }
 
 .category-list .category,
 .category-list.with-topics .category {
-  width: 25rem;
-	// border-radius: 2px;
-	// box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-	// margin-top: 0rem;
-	// overflow: hidden;
-	// position: relative;
-	// width: 100%;
-	// display: grid;
-	// grid-template-columns: repeat(1, 1fr);
-	// grid-template-rows: auto 1fr;
-	// grid-column-gap: 0px;
-	// grid-row-gap: 0px
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 0rem;
+	margin-right: 2rem;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px
 }
 
 .category-list.with-topics>thead tr th {
 	border-bottom: 8px;
-  font-weight: 800;
-  font-size: 1.1rem;
+	padding: 16px;
+	font-weight: 800;
+	font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -395,16 +399,18 @@ nav.post-controls {
 
 .category-list .category .category-head,
 .category-list.with-topics .category .category-head {
-	background-color: #171928;
+	background-color: transparent;
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
-	display: flex;
+	display: grid;
 	margin: 0;
 	overflow: hidden;
 	position: relative;
-	padding: 2rem;
-	grid-area: 1 / 1 / 2 / 3
+	padding: 1rem;
+	margin-bottom: 16px;
+	border-radius: 8px;
+	grid-area: 1 / 1 / 2 / 1
 }
 
 @media screen and (max-width: 768px) {
@@ -424,8 +430,17 @@ nav.post-controls {
 	width: 100%;
 	height: 100%;
 	content: " ";
-	background: linear-gradient(90deg, rgba(23, 25, 23, 0.9) 20%, rgba(23, 25, 23, 0.5) 60%, rgba(23, 25, 23, 0.7) 100%);
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
 	z-index: 1
+}
+
+.category-list {
+	table-layout: fixed;
+	.category-text-title {
+	  display: inline;
+	  align-items: baseline;
+	}
 }
 
 .category-list .category .category-head .category-title-link,
@@ -444,7 +459,7 @@ nav.post-controls {
 	color: white;
 	font-size: 2rem;
 	font-weight: bold;
-	font-family: var(--heading-font-family);
+	font-family: var(--alt-font-family);
 	margin: 0 0 0.5rem 0;
 	padding: 0;
 	overflow: visible
@@ -452,7 +467,7 @@ nav.post-controls {
 
 .category-list .category .category-head .category-title-link .category-description,
 .category-list.with-topics .category .category-head .category-title-link .category-description {
-	color: #888cb1;
+	color: #adadad;
 	font-size: 1rem;
 	margin: 0;
 	padding: 0;
@@ -482,11 +497,12 @@ nav.post-controls {
 	font-weight: bold
 }
 
-.category-list .category[data-category-id="5"] .subcategories .badge.badge-notification,
-.category-list .category[data-category-id="5"] .topics .badge.badge-notification,
-.category-list.with-topics .category[data-category-id="5"] .subcategories .badge.badge-notification,
-.category-list.with-topics .category[data-category-id="5"] .topics .badge.badge-notification {
-	background-color: #ce422b !important
+.category-list .category[data-category-id="14"] .subcategories .badge.badge-notification,
+.category-list .category[data-category-id="14"] .topics .badge.badge-notification,
+.category-list.with-topics .category[data-category-id="14"] .subcategories .badge.badge-notification,
+.category-list.with-topics .category[data-category-id="14"] .topics .badge.badge-notification {
+	background-color: #ce422b !important;
+	display: none;
 }
 
 .category-list .category[data-category-id="9"] .category-head .category-description,
@@ -516,16 +532,16 @@ nav.post-controls {
 .category-list .category .subcategories,
 .category-list.with-topics .category .subcategories {
 	background-color: rgba(0, 0, 0, 0);
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	grid-area: 2 / 1 / 2 / 4;
 	margin: 0;
-	padding: 0.15rem
+	padding: 0rem
 }
 
 .category-list .category .subcategories .subcategory,
 .category-list.with-topics .category .subcategories .subcategory {
-	align-items: center;
+	align-items: right;
 	display: flex;
 	margin-bottom: 2px
 }
@@ -643,7 +659,7 @@ nav.post-controls {
 
 .category-list .category .topics>.featured-topic>:last-child,
 .category-list.with-topics .category .topics>.featured-topic>:last-child {
-	border-top-right-radius: 4px;
+	border-top-right-radius: 16px;
 	border-bottom-right-radius: 4px;
 	overflow: hidden
 }
@@ -828,14 +844,19 @@ body.category .category-heading:before {
 	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0.7) 100%)
 }
 
+div.category-logo.aspect-image {
+	width: 64px !important;
+	height: 64px !important;
+}
+
 body.category .category-heading .category-logo,
 body.category .category-heading .category-logo img {
-	width: 64px;
-	height: 64px;
+	width: 64px !important;
+	height: 64px !important;
 	margin: 0;
 	border-radius: 10px;
 	position: relative;
-	margin-right: 1rem
+	margin-right: 10rem
 }
 
 @media screen and (max-width: 768px) {
