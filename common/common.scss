@@ -1227,6 +1227,10 @@ table.topic-list>tbody tr td.posters img:hover {
 	border-radius: 8px
 }
 
+div .topic-body .cooked {
+	background-color: transparent;
+}
+
 .container.posts article.onscreen-post div.row .topic-body .cooked {
 	margin: 1.5rem 0;
   background-color: none;
@@ -1545,17 +1549,17 @@ body.archetype-private_message .post-stream .topic-list {
 }
 
 .post-actions {
-  background-color: var(--secondary);
+  background-color: transparent
 }
 
 section.post-menu-area{
-  background-color: var(--secondary);
+  background: linear-gradient(-90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0) 100%);
   transition: all 0.2s ease;
   border-radius: 10px
 }
 
 section.post-menu-area:hover{
-  background-color: rgba(0, 0, 0, 0.5);
+	background: linear-gradient(-90deg, rgba(33, 35, 35, 1) 20%, rgba(23, 25, 25, 0.5) 60%, rgba(23, 25, 25, 0) 100%);
 }
 
 .categories-and-latest .category-heading {
