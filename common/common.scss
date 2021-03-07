@@ -576,13 +576,13 @@ nav.post-controls {
 .category-list.with-topics .category .subcategories .subcategory .bage-wrapper.box span.badge-category {
 	align-items: center;
 	background-color: var(--secondary);
-	border-radius: 4px;
+	border-radius: 8px;
 	display: flex;
 	padding: 0.2rem;
 	min-width: 300px;
 	color: var(--primary);
 	font-weight: bold;
-	transition: all 0.2s ease
+	transition: all 0.5s ease
 }
 
 .category-list .category .subcategories .subcategory .badge-wrapper span.badge-category>svg,
@@ -608,8 +608,8 @@ nav.post-controls {
 .category-list .category .subcategories .subcategory .bage-wrapper.box span.badge-category:hover,
 .category-list.with-topics .category .subcategories .subcategory .badge-wrapper span.badge-category:hover,
 .category-list.with-topics .category .subcategories .subcategory .bage-wrapper.box span.badge-category:hover {
-	background-color: var(--primary);
-	padding: 0.25rem 0.5rem
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
+	padding: 0.25rem 0.5rem;
 }
 
 .category-list .category .subcategories .subcategory .badge-wrapper span.badge-category:hover .category-name,
