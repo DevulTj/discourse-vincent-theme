@@ -285,7 +285,7 @@ div.menu-panel.drop-down {
 	background-color: rgba(191, 193, 218, 0);
 	padding: 1.2rem;
 	font-size: 1rem;
-	color: #888cb1;
+	color: var(--primary);
 	font-family: var(--heading-font-family);
 	margin: 0
 }
@@ -293,7 +293,7 @@ div.menu-panel.drop-down {
 #main-outlet>.list-controls button .svg-icon {
 	width: 0.8rem;
 	height: 0.8rem;
-	color: #888cb1
+	color: var(--primary)
 }
 
 #main-outlet>.list-controls button.btn .d-button-label {
@@ -323,7 +323,7 @@ div.menu-panel.drop-down {
 #main-outlet>.list-controls ul.nav li a {
 	background-color: rgba(136, 140, 177, 0);
 	padding: 1.2rem;
-	color: #888cb1;
+	color: var(--primary);
 	font-family: var(--heading-font-family)
 }
 
@@ -493,7 +493,7 @@ nav.post-controls {
 
 .category-list .category .category-head .stats,
 .category-list.with-topics .category .category-head .stats {
-	color: #888cb1;
+	color: var(--primary);
 	display: flex;
 	font-size: 0.8rem;
 	flex-direction: column;
