@@ -1163,7 +1163,13 @@ table.topic-list>tbody tr td.posters img:hover {
 }
 
 #topic-title h1 a {
-    color: var(--primary);
+    color: white;
+	text-shadow: 2px 2px black;
+}
+
+.title-wrapper
+{
+	color: white;
 	text-shadow: 2px 2px black;
 }
 
