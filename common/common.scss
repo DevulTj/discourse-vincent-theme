@@ -1580,6 +1580,7 @@ body.archetype-private_message .post-stream .topic-list {
 }
 
 topic-list .num a.badge-posts,
+badge-posts[href],
 a.post-activity,
 .topic-list td {
 	color: var(--primary) !important;
