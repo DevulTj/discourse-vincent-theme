@@ -767,6 +767,7 @@ nav.post-controls {
 	padding: 0.25rem 0.5rem
 }
 
+
 .category-list .category .topics>.featured-topic .last-posted-at .relative-date,
 .category-list.with-topics .category .topics>.featured-topic .last-posted-at .relative-date {
 	width: 100%
@@ -1580,6 +1581,11 @@ body.archetype-private_message .post-stream .topic-list {
 
 .post-actions {
   background-color: transparent
+}
+
+a.post-activity {
+	color: white;
+	text-shadow: 2px 2px black;
 }
 
 section.post-menu-area{
