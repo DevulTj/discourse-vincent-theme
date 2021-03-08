@@ -1162,6 +1162,11 @@ table.topic-list>tbody tr td.posters img:hover {
 	margin: 0
 }
 
+#topic-title h1 a {
+    color: var(--primary);
+	text-shadow: 2px 2px black;
+}
+
 .archetype-regular #topic-title .container {
 
 }
