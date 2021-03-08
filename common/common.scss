@@ -1579,18 +1579,13 @@ body.archetype-private_message .post-stream .topic-list {
 	text-shadow: 2px 2px black;
 }
 
-.post-actions {
-  background-color: transparent
-}
-
-a.post-activity {
-	color: var(--primary);
-	text-shadow: 2px 2px black;
-}
+topic-list .num a.badge-posts,
+a.post-activity,
 .topic-list td {
 	color: var(--primary);
 	text-shadow: 2px 2px black;
 }
+
 
 section.post-menu-area{
   background: linear-gradient(-90deg, rgba(23, 25, 25, 0.9) 20%, rgba(23, 25, 25, 0) 40%, rgba(23, 25, 25, 0) 100%);
