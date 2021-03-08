@@ -1111,7 +1111,8 @@ table.topic-list>tbody tr td.main-link .link-bottom-line .badge-wrapper.box .bad
 table.topic-list>tbody tr td.main-link .link-bottom-line .badge-wrapper.box .badge-category.clear-badge {
 	margin-left: 0;
 	padding: 0 2px;
-	transition: all 0.2s ease
+	transition: all 0.2s ease;
+	color: white;
 }
 
 table.topic-list>tbody tr td.main-link .link-bottom-line .badge-wrapper.box:hover .badge-category.clear-badge {
