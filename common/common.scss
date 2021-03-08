@@ -564,6 +564,8 @@ nav.post-controls {
 	margin-bottom: 2px
 }
 
+
+
 .category-list .category .subcategories .subcategory .badge-wrapper,
 .category-list .category .subcategories .subcategory .bage-wrapper.box,
 .category-list.with-topics .category .subcategories .subcategory .badge-wrapper,
@@ -1606,3 +1608,12 @@ section.post-menu-area:hover{
 th.latest {
 	width: 35%;
 }
+
+@media screen and (min-width: 1400px) {
+	.wrap { max-width: 1200px; }
+  }
+  
+  
+  @media screen and (min-width: 1600px) {
+	.wrap { max-width: 1400px; }
+  }
