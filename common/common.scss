@@ -439,7 +439,9 @@ nav.post-controls {
 }
 
 .category-list.with-topics .category .category-head:hover {
+	transition: all 0.5s ease;
 	background-color: rgba(23, 25, 25, 0.4);
+	border-radius: 32px;
 }
 
 .category-list {
