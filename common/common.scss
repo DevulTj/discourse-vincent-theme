@@ -434,7 +434,12 @@ nav.post-controls {
 	content: " ";
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
+	transition: all 0.5s ease;
 	z-index: 1
+}
+
+.category-list.with-topics .category .category-head:hover {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 .category-list {
