@@ -1584,7 +1584,11 @@ body.archetype-private_message .post-stream .topic-list {
 }
 
 a.post-activity {
-	color: white;
+	color: var(--primary);
+	text-shadow: 2px 2px black;
+}
+.topic-list td {
+	color: var(--primary);
 	text-shadow: 2px 2px black;
 }
 
