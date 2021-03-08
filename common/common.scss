@@ -1582,7 +1582,7 @@ body.archetype-private_message .post-stream .topic-list {
 topic-list .num a.badge-posts,
 a.post-activity,
 .topic-list td {
-	//color: var(--primary);
+	color: var(--primary) !important;
 	text-shadow: 2px 2px black;
 }
 
