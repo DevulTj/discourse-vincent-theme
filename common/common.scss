@@ -584,7 +584,7 @@ nav.post-controls {
 .category-list.with-topics .category .subcategories .subcategory .badge-wrapper span.badge-category,
 .category-list.with-topics .category .subcategories .subcategory .bage-wrapper.box span.badge-category {
 	align-items: center;
-	background-color: var(--secondary);
+	background: linear-gradient(90deg, rgba(23, 25, 25, 0.9) 30%, rgba(29, 29, 29, 0.8) 50%, rgba(36, 36, 36, 0.9) 100%);
 	border-radius: 8px;
 	display: flex;
 	padding: 0.2rem;
